@@ -26,8 +26,15 @@
   <link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
 
 	{{ "<!--Favicon-->" | safeHTML }}
-	<link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
-	<link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+	{{ with resources.Get "images/favicon.ico" | fingerprint }}
+	<link rel="shortcut icon" href="{{ .RelPermalink }}" type="image/x-icon">
+	{{ end }}
+	{{ with resources.Get "images/favicon-32x32.png" | fingerprint }}
+	<link rel="icon" href="{{ .RelPermalink }}" type="image/png" sizes="32x32">
+	{{ end }}
+	{{ with resources.Get "images/favicon-16x16.png" | fingerprint }}
+	<link rel="icon" href="{{ .RelPermalink }}" type="image/png" sizes="16x16">
+	{{ end }}
 
 	{{ with site.Params.google_analytics_id }}
 	{{ "<!-- Global Site Tag (gtag.js) - Google Analytics -->" | safeHTML }}

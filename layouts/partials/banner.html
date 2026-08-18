@@ -13,7 +13,7 @@ $data.banner.banner.enable }} {{ with $data.banner.banner }} {{"<!-- Welcome Sli
       <i class="{{ .icon }}"></i>
     </div>
     {{ end }}
-    <h1>{{ .title | markdownify }}</h1>
+    {{ partial "image.html" (dict "Src" "images/logo-large.png" "Alt" "tecunhuman" "Class" "hero-logo") }}
     <p>{{ .content | markdownify }}</p>
     {{ if .button.enable }} {{ with .button }}
     <a href="{{ .link }}" class="btn btn-transparent page-scroll"
