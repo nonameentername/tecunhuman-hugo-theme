@@ -1,0 +1,13 @@
+name = "TecunHuman Hugo"
+license = "MIT"
+licenselink = "LICENSE"
+description = "TecunHuman Hugo is a responsive, minimalist, lightweight, and fast loading one-page Hugo theme built with HTML5, CSS3, JavaScript, and jQuery."
+homepage = "https://tecunhuman.com/"
+demosite = "https://tecunhuman.com/"
+tags = ['landing-page', 'hugo-theme', 'bootstrap', 'responsive', 'single-page', 'dark', 'clean']
+features = ['bootstrap','responsive']
+min_version = "0.147.2"
+
+[author]
+  name = "TecunHuman"
+  homepage = "https://tecunhuman.com/"
