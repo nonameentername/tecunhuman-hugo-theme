@@ -115,6 +115,39 @@
   color: inherit;
 }
 
+.social-icon ul li {
+  margin-bottom: 8px;
+}
+
+.social-icon ul li a {
+  background: #242930;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  color: #ffffff;
+  overflow: hidden;
+  transition: border-color 0.5s ease, color 0.3s ease;
+}
+
+.social-icon ul li a:hover,
+.social-icon ul li a:focus {
+  background: #242930;
+  border-bottom-color: #57cbcc;
+  color: #57cbcc;
+}
+
+.social-icon ul li a i {
+  color: currentColor;
+  opacity: 1;
+  transform: translateY(0);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon ul li a:hover i,
+.social-icon ul li a:focus i {
+  color: currentColor;
+  transform: translateY(-8px);
+}
+
 #cta.call-to-action {
   background-attachment: scroll;
   min-height: 420px;
