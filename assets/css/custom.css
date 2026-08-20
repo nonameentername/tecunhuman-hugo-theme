@@ -70,7 +70,7 @@
 }
 
 
-.service-block {
+.project-block {
   background: #242930;
   border: 0;
   border-bottom: 2px solid transparent;
@@ -80,12 +80,12 @@
   transition: border-color 0.5s ease, transform 0.3s ease;
 }
 
-.service-block:hover,
-.service-block:focus-within {
+.project-block:hover,
+.project-block:focus-within {
   border-bottom-color: #57cbcc;
 }
 
-.service-block .service-icon {
+.project-block .project-icon {
   color: #57cbcc;
   font-size: 50px;
   margin-bottom: 24px;
@@ -93,25 +93,25 @@
   transition: transform 0.3s ease;
 }
 
-.service-block:hover .service-icon,
-.service-block:focus-within .service-icon {
+.project-block:hover .project-icon,
+.project-block:focus-within .project-icon {
   transform: translateY(-10px);
 }
 
-.service-block h3 {
+.project-block h3 {
   color: #afbac4;
 }
 
-.service-block p {
+.project-block p {
   color: #737f8a;
 }
 
-.service-link {
+.project-link {
   display: block;
 }
 
-.service-link:hover,
-.service-link:focus {
+.project-link:hover,
+.project-link:focus {
   color: inherit;
 }
 
